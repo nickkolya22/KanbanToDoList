@@ -1,0 +1,136 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  transition: border-color 0.15s, opacity 0.15s, background 0.15s;
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+}
+
+.selected {
+  border-color: var(--accent);
+  background: #1c2038;
+}
+
+.dragging {
+  opacity: 0.35;
+}
+
+.done {
+  opacity: 0.65;
+}
+
+.done .text {
+  text-decoration: line-through;
+  color: var(--text-subtle);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.selectBox {
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.handle {
+  color: var(--text-subtle);
+  cursor: grab;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.handle:active {
+  cursor: grabbing;
+}
+
+.complete {
+  accent-color: var(--success);
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.text {
+  flex: 1;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.4;
+  min-width: 0;
+  overflow-wrap: break-word;
+  cursor: text;
+}
+
+.editInput {
+  flex: 1;
+  background: var(--hover-bg);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 2px 6px;
+  font-size: 13px;
+  outline: none;
+  min-width: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.card:hover .actions {
+  opacity: 1;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  color: var(--text-subtle);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.btnDelete:hover {
+  background: var(--danger-dim);
+  color: var(--danger);
+}
+
+.highlight {
+  background: rgba(250, 204, 21, 0.3);
+  color: #fde68a;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    opacity: 1;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,9 @@
+.target {
+  border-radius: var(--radius);
+  transition: padding-top 0.1s;
+}
+
+.over {
+  padding-top: 6px;
+  border-top: 2px solid var(--accent);
+}

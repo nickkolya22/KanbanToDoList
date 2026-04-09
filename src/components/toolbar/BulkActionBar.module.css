@@ -1,0 +1,115 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+  background: #1a1f30;
+  border-bottom: 1px solid var(--accent);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.count {
+  font-weight: 600;
+  color: var(--accent-light);
+  font-size: 13px;
+}
+
+.clear {
+  display: flex;
+  align-items: center;
+  color: var(--text-subtle);
+  padding: 3px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.clear:hover {
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 5px 12px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 500;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.btnComplete {
+  background: var(--success-dim);
+  color: var(--success);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.btnComplete:hover {
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.btnIncomplete {
+  background: var(--card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.btnIncomplete:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.btnDelete {
+  background: var(--danger-dim);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.btnDelete:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.btnMove {
+  background: var(--card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btnMove:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .bar {
+    padding: 8px 16px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar {
+    padding: 8px 12px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}

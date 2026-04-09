@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: var(--accent);
+}
+
+.confirmText {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.confirmText strong {
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.btnCancel {
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btnCancel:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.btnConfirm {
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--accent);
+  color: #fff;
+  transition: opacity 0.15s;
+}
+
+.btnConfirm:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.btnConfirm:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btnDanger {
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--danger);
+  color: #fff;
+  transition: opacity 0.15s;
+}
+
+.btnDanger:hover {
+  opacity: 0.85;
+}

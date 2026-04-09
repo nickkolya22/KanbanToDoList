@@ -1,0 +1,56 @@
+.column {
+  width: var(--col-width);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color 0.15s,
+    opacity 0.15s;
+}
+
+.dragOver {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-tint);
+}
+
+.dragging {
+  opacity: 0.4;
+}
+
+.selectAllRow {
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.selectAll {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-subtle);
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selectAll input {
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  min-height: 60px;
+  flex: 1;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-subtle);
+  font-size: 13px;
+  padding: 20px 10px;
+}
