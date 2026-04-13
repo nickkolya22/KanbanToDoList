@@ -2,7 +2,7 @@
 
 A drag-and-drop Kanban board with task management, bulk actions, and real-time filtering.
 
-**Demo:** [https://kanban-todo-list-rouge.vercel.app](https://kanban-todo-list-rouge.vercel.app)
+**Demo:** [kanban-to-do-list-chi.vercel.app](https://kanban-to-do-list-chi.vercel.app)
 
 ## Features
 
